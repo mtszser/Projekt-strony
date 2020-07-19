@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    min-width: 200px;
+    height: 100vh;
+}
+
+.wrapper 
+{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+ul,a
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar
+{
+    background-color: rgb(29, 29, 29);
+    height: auto;
+    width: auto;
+}
+
+.navbar > ul
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav_a
+{
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(51, 51, 51);
+}
+
+.nav_a > img
+{
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav_a > span
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 550;
+    color: white
+}
+
+.nav_d
+{
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nav_d > img
+{
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav_d > span
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 350;
+    color: white
+}
+
+.nav_d:hover
+{
+    background-color: rgb(51, 51, 51);
+    transition: 1s;
+    color: white;
+}
+
+main
+{  
+    display: flex;
+    width: auto;
+    background-color:white;
+    min-height: calc(100vh - 45px - 26px);
+    justify-content: center;
+}
+
+
+
+.article
+{ 
+    display: inline-block;
+    margin-top: 100px;
+    width: 600px;
+    text-align: center;
+    justify-content: center; 
+}
+
+.logodiv
+{
+    display: inline-block;
+    width: 400px;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.logo
+{  
+    height: 350px;
+}
+
+h1
+{
+    font-size: 40px;
+    font-family: helvetica;
+    color: rgb(119, 119, 119);
+}
+h2
+{
+    font-size: 60px;
+    font-family: helvetica;
+    margin-bottom: 15px;
+}
+
+.descr
+{
+    background-color: rgb(51, 51, 51);
+}
+
+p
+{
+    font-size: 16px; 
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+
+footer
+{
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    justify-content: center;
+    border-top: solid;
+    border-width: 1px;
+    border-color: rgb(197, 197, 197);   
+}
+
+footer > span
+{
+
+    font-family: Metal Mania;
+    font-size: 20px;
+    color: white;
+    
+}
+
+
+
+.workout
+{
+    margin-top: 100px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.workout > h3
+{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+
+
+.podcast
+{
+    margin-top: 100px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.podcast > h3
+{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+
+.td_container
+{
+    margin-top: 60px;
+    height: 60px;
+    width: 30%;
+    background-color: rgb(190, 190, 243);
+    border-radius: 30px
+}
+
+.td_container #td_but
+{
+    font-size: 15px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.td_container #td_but:hover
+{
+    background-color: rgb(206, 206, 206)
+}
+.td_container h1
+{
+    font-family: monospace;
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+}
+
+.td_list li
+{
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    width: auto;
+    border-color: rgb(226, 223, 223);
+    background-color: whitesmoke;
+    border-radius: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.td_list li:hover
+{
+    background-color: rgb(238, 235, 235)
+}
+
+.td_list li.checked
+{
+    content: '';
+    text-decoration: line-through;
+    color: rgb(129, 127, 127);
+    background-color: rgb(209, 208, 208)
+}
+
+input
+{
+    height: 25px;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+input::placeholder
+{
+    color:rgb(102, 101, 101);
+    font-size: 15px;
+    font-family: Arial;
+    text-align: center;
+    width: auto;
+}
+
+.td_add
+{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+   
+}   
+
+.close
+{
+    float: right;
+    color: black;
+}
+
+.close:hover 
+{
+    color: red;
+}
+
